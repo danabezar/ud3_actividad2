@@ -1,0 +1,95 @@
+/*Todos los elementos de la pagina */
+* {
+    font: 1em/1.3 Arial, Helvetica, sans-serif;
+}   
+
+/* Todos los parrafos de la pagina */
+p {
+    color: #555;
+}
+
+/* Todos los párrafos contenidos en #primero */
+#primero p{
+    color: #336699;
+}
+
+/* Todos los enlaces la pagina */
+a {
+    color: #cc3300;
+}
+
+/* Los elementos "em" contenidos en #primero */
+#primero em{
+    background: #ffffcc;
+    padding: 0.1em;
+}
+
+/* Todos los elementos "em" de clase "especial" en toda la
+pagina */
+em.especial {
+    background: #ffcc99;
+    border: 1px solid #ff9900;
+    padding: 0.1em;
+}
+
+/* Elementos "span" contenidos en .normal */
+.normal span {
+    font-weight: bold;
+}
+  
+/* Elementos primeros de la lista li */
+li:first-child {
+    color: #b12121;
+}
+
+/* Primeras lineas de los Párrafos */
+p::first-line{
+    color: #2c881f;
+}
+
+/* Elementos strong únicos */
+strong:only-of-type{
+    color: pink;
+}
+
+/* Cada 3 elementos del listado */
+li:nth-child(3n){
+    color: red;
+}
+
+/* Aquellos elementos de p que no sean u */
+p:not(u){
+    color: gold;
+}
+
+/* El primer y el último elemento de la lista li*/
+li:first-child, li:last-child{
+    color: #b900aa;
+}
+
+/*Todos los hermanos de h1*/
+h1 ~ * {
+    border: 5px solid #333;
+}
+
+/*El hermano adyacente a h1*/ 
+h1 + *{
+    border: 2px solid #c46c6c;
+}
+
+/* Todo elemento que contenga un atributo name con un valor que comience en "si"*/
+*[name^="si"]{
+    border: 5px solid #333;
+}
+
+/* Todo elemento que contenga un atributo name con un valor que contenga en "l"*/
+*[name*="l"]{
+    color: red;
+    border: 5px solid #333;
+}
+
+/* Aquellos li que estén vacíos */
+li:empty{
+    color: red;
+}
+  
